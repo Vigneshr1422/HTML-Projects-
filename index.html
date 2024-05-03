@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vignesh R - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div id="home">
+            <div class="profile_name">
+                <span>Vignesh R</span>
+                <div class="contact_info">
+                    <img src="html_finalprojimages/envelope.png" alt="Envelope icon" />
+                    vigneshramesh2208@gmail.com
+                </div>
+                <div class="contact_info">
+                    <img src="html_finalprojimages/phone.png" alt="Phone icon" />
+                    +91 6380792434
+                </div>
+            </div>
+            <div class="topdiv">
+                <a class="topmenu" href="#about-me">About Me</a>
+                <a class="topmenu" href="#skills">Skills</a>
+                <a class="topmenu" href="#projects">Projects</a>
+                <a class="topmenu" href="#recommendations">Recommendations</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Me Section -->
+    <section id="about-me" class="container">
+        <div class="image">
+            <img src="https://miro.medium.com/max/1400/1*qdAW1TjCN57h1lbuuzvchg.gif" class="profile_image" alt="Profile" />
+        </div>
+        <div>
+            <h1>
+                Hi, I'm Vignesh
+                <img src="html_finalprojimages/waving-hand.png" width="60px" alt="Waving hand" />
+            </h1>
+            <p class="para">
+                I am a full stack developer with 1 year of experience in both application and presentation layers.
+                I have worked on applications and microservices deployed on IBM Cloud.
+                I am an avid user of IBM Watson Services and have worked on Watson Assistant, NLU, and sentiment analyzer, to name a few.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="all_skills">
+            <div class="skill">
+                <img src="html_finalprojimages/html5.png" alt="HTML5 icon" />
+                <h6>HTML</h6>
+                <p>2 years experience</p>
+            </div>
+            <div class="skill">
+                <img src="html_finalprojimages/js.jpeg" alt="JavaScript icon" />
+                <h6>JavaScript</h6>
+                <p>3 years experience</p>
+            </div>
+            <div class="skill">
+                <img src="html_finalprojimages/node.png" alt="Node.js icon" />
+                <h6>Node.js</h6>
+                <p>1 year experience</p>
+            </div>
+            <div class="skill">
+                <img src="html_finalprojimages/CSS3.png" alt="CSS3 icon" />
+                <h6>CSS3</h6>
+                <p>2 years experience</p>
+            </div>
+            <div class="skill">
+              <img src="html_finalprojimages/java.png" alt="Java icon" />
+              <h6>Java</h6>
+              <p>3 years experience</p>
+          </div>
+          <div class="skill">
+            <img src="html_finalprojimages/react.png" alt="React icon" />
+            <h6>React</h6>
+            <p>3 years experience</p>
+        </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div id="projects-container" class="projects-container">
+            <div class="project-card">
+                <h3>Chatbot</h3>
+                <ul>
+                    <li>Developed a secure website integrated with chatbot for an automobile client using HTML, CSS, JavaScript, and IBM Watson Assistant.</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="project-card">
+                <h3>Sentiment Analyzer</h3>
+                <ul>
+                    <li>Developed and deployed a sentiment analyzer for the box reviews section of an eCommerce platform using IBM NLU.</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="project-card">
+                <h3>Fashion Website</h3>
+                <ul>
+                    <li>Created a styled multi-page website for a new player in the fashion industry and integrated it with a shopping cart using Stripe for payment gateway.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommendations Section -->
+    <section id="recommendations">
+        <h2>Recommendations</h2>
+        <div class="all_recommendations">
+            <div class="recommendation">
+                <span>“</span>
+                vignesh is a very quick learner and quickly grasps key concepts of Web development. He has a great attitude and is an excellent team player.
+                <span>”</span>
+            </div>
+            <div class="recommendation">
+                <span>“</span>
+                Collaborating with vignesh has been fantastic. He expertise shines through, and he consistently goes above and beyond to ensure everything is perfect.                <span>”</span>
+            </div>
+            <div class="recommendation">
+                <span>“</span>
+                Working with Vignesh has been an awesome experience. he is highly knowledgeable and always goes the extra step to make sure everything is right.
+                <span>”</span>
+            </div>
+            <div class="recommendation">
+                <span>“</span>
+                I had worked along with Vignesh during the initial phase of our venture, which needed Web development. he is a committed resource who has in-depth knowledge about the domain. he will be an asset for any organization!
+                <span>”</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommendation Form Section -->
+    <section id="contact">
+        <div class="flex_center">
+          <h3 >Leave a Recommendation</h3>
+            <fieldset>
+                <legend class="introduction"><h3></h3></legend>
+                <input type="text" placeholder="Name (Optional)"> <br>
+                <textarea id="new_recommendation" cols="50" rows="10" placeholder="Message"></textarea>
+                <div class="flex_center">
+                    <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+                </div>
+            </fieldset>
+        </div>
+    </section>
+
+    <!-- Pop-up for Form Submission -->
+    <div class="popup" id="popup">
+        <img src="html_finalprojimages/checkmark--outline.svg" alt="Checkmark icon" />
+        <h3>Recommendation submitted!</h3>
+        <button onclick="showPopup(false)">Ok</button>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+    </svg>
+    <script src="script.js"></script>
+</body>
+</html>
